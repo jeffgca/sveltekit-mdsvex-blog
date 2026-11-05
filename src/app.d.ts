@@ -8,7 +8,7 @@ declare namespace App {
 	// interface Platform {}
 
 	interface MdsvexFile {
-		default: import('svelte/internal').SvelteComponent;
+		default: import('svelte').Component;
 		metadata: Record<string, string>;
 	}
 
@@ -23,3 +23,5 @@ declare namespace App {
 		published: boolean;
 	}
 }
+
+declare module 'remark-abbr';

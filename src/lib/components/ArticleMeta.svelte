@@ -11,13 +11,13 @@
 </p>
 
 <style>
-  p {
-    margin: 0;
-    margin-bottom: calc(var(--spacing-unit) * 4);
-  }
+	p {
+		margin: 0;
+		margin-bottom: calc(var(--spacing-unit) * 4);
+	}
 
 	.author {
-    font-weight: bold;
+		font-weight: bold;
 		margin-right: calc(var(--spacing-unit) * 2);
 	}
 

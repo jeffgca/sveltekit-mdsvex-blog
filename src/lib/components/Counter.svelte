@@ -8,17 +8,17 @@
 </div>
 
 <style>
-  .counter {
-    text-align: center;
-  }
+	.counter {
+		text-align: center;
+	}
 
-  .count {
-    font-size: 2rem;
-    margin-bottom: calc(var(--spacing-unit) * 2);
-  }
+	.count {
+		font-size: 2rem;
+		margin-bottom: calc(var(--spacing-unit) * 2);
+	}
 
-  .counter {
-    margin-top: calc(var(--spacing-unit) * 4);
-    margin-bottom: calc(var(--spacing-unit) * 4);
-  }
+	.counter {
+		margin-top: calc(var(--spacing-unit) * 4);
+		margin-bottom: calc(var(--spacing-unit) * 4);
+	}
 </style>
