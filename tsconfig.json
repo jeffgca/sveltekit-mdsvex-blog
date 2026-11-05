@@ -1,22 +1,12 @@
 {
 	"extends": "$app/tsconfig",
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
 		"paths": {
 			"#lib/*": ["./src/lib/*"]
 		},
-		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true
 	},
 	"include": ["src", "tests", "*"],
 	"exclude": ["src/service-worker"]
-	// The #lib import is also declared in package.json for runtime resolution.
-	//
-	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
-	// from the referenced tsconfig.json - TypeScript does not merge them in
 }
