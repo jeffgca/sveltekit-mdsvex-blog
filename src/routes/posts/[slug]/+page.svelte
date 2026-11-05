@@ -5,13 +5,19 @@
 	import ArticleTitle from '#lib/components/ArticleTitle.svelte';
 	import ArticleMeta from '#lib/components/ArticleMeta.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
 
-	$: component = data.component;
+	let { data }: Props = $props();
+
+	let component = $derived(data.component);
+
+	const SvelteComponent = $derived(component);
 </script>
 
 <PageHead title={data.frontmatter.title} description={data.frontmatter.description} />
 <ArticleTitle title={data.frontmatter.title} />
 <ArticleMeta author={data.frontmatter.author} date={data.frontmatter.date} />
 
-<svelte:component this={component} />
+<SvelteComponent />

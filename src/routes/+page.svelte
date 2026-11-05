@@ -7,7 +7,12 @@
 	import ArticleMeta from '#lib/components/ArticleMeta.svelte';
 	import ArticleDescription from '#lib/components/ArticleDescription.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+		children?: import('svelte').Snippet;
+	}
+
+	let { data, children }: Props = $props();
 </script>
 
 <PageHead title="Home" description="An awesome blog about development with Svelte" />
@@ -26,4 +31,4 @@
 	</Article>
 {/each}
 
-<slot />
+{@render children?.()}
